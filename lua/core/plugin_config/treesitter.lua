@@ -9,3 +9,6 @@ require 'nvim-treesitter.configs'.setup {
     enable = true,
   },
 }
+
+vim.keymap.set('n', '<leader>sf', ':Telescope treesitter<CR>', { noremap = true, silent = true })
+

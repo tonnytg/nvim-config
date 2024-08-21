@@ -23,9 +23,16 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
+    tag = '0.1.4',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- Auto Complete
+  use 'neovim/nvim-lspconfig'  -- LSP Config
+  use 'hrsh7th/nvim-cmp'       -- Autocompletar
+  use 'hrsh7th/cmp-nvim-lsp'   -- LSP source for nvim-cmp
+  use 'hrsh7th/cmp-buffer'     -- Buffer source for nvim-cmp
+  use 'hrsh7th/vim-vsnip'      -- Snippet engine
+  use 'hrsh7th/cmp-vsnip'      -- Snippet completions
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
