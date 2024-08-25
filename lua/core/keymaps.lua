@@ -1,17 +1,37 @@
+-- Set o as local variable
+local o = vim.opt
+
+o.number = true        -- Mostrar números nas linhas
+o.relativenumber = true -- Mostrar números relativos
+o.expandtab = true     -- Converter tabs em espaços
+o.shiftwidth = 4       -- Número de espaços para cada indentação
+o.tabstop = 4          -- Número de espaços para tabs
+o.smartindent = true   -- Indentar automaticamente
+o.backspace = '2'
+o.showcmd = true
+o.laststatus = 2
+o.autowrite = true
+o.cursorline = true
+o.autoread = true
+
+-- use spaces for tabs and whatnot
+o.shiftround = true
+o.expandtab = true
+
+-- Habilitar o uso do clipboard do sistema para yank e paste
+o.clipboard = 'unnamedplus'
+
 vim.g.mapleader = ','
 vim.g.maplocalleader = ','
 
-vim.opt.backspace = '2'
-vim.opt.showcmd = true
-vim.opt.laststatus = 2
-vim.opt.autowrite = true
-vim.opt.cursorline = true
-vim.opt.autoread = true
+-- Habilitar folding baseado na indentação
+o.foldmethod = 'indent'
 
--- use spaces for tabs and whatnot
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.shiftround = true
-vim.opt.expandtab = true
+-- Definir o nível de fold inicial (0 significa tudo expandido)
+o.foldlevel = 99
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+-- Permite que você veja o número de linhas dentro de um fold
+o.foldcolumn = '1'
+
+-- Desabilitar o folding automático ao abrir o arquivo
+o.foldenable = false
