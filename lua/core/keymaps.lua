@@ -7,3 +7,7 @@ vim.keymap.set('n', 'yy', '"+yy', { noremap = true })
 
 -- Config for Search Highline
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+-- Busca por algo dentro dos arquivos
+vim.keymap.set('n', '<C-f>', "<cmd>Telescope live_grep<cr>", { noremap = true, silent = true })
+
