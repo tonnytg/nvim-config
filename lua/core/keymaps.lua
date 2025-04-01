@@ -11,3 +11,5 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 -- Busca por algo dentro dos arquivos
 vim.keymap.set('n', '<C-f>', "<cmd>Telescope live_grep<cr>", { noremap = true, silent = true })
 
+-- Ctags
+vim.keymap.set('n', '<leader>ct', ':!ctags -R .<CR>', { noremap = true, silent = true, desc = "ctags recursive" })
