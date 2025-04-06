@@ -11,7 +11,6 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 -- Busca por algo dentro dos arquivos
 vim.keymap.set('n', '<C-f>', "<cmd>Telescope live_grep<cr>", { noremap = true, silent = true })
 
-<<<<<<< HEAD
 -- Modo normal: adiciona indentação na linha atual
 vim.keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true })
 
@@ -24,8 +23,5 @@ vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
 -- Modo normal: remove indentação na linha atual com Shift+Tab
 vim.keymap.set("n", "<S-Tab>", "<<", { noremap = true, silent = true })
 
-||||||| 45c8fd1
-=======
 -- Ctags
 vim.keymap.set('n', '<leader>ct', ':!ctags -R .<CR>', { noremap = true, silent = true, desc = "ctags recursive" })
->>>>>>> 6877886c2cca33f46aa2652a834f9c57488dca69
