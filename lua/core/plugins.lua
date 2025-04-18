@@ -22,6 +22,15 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use {
+    'jupyter-vim/jupyter-vim',
+    config = function()
+      vim.g.jupyter_mapkeys = 1
+      vim.g.jupyter_command = 'jupyter console --simple-prompt'
+      vim.g.jupyter_highlight_cells = 1
+      vim.g.jupyter_cell_separators = { "# %%" }
+    end
+  }
+  use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.4',
     requires = { {'nvim-lua/plenary.nvim'} }
