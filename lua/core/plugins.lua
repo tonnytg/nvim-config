@@ -36,6 +36,12 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   -- Auto Complete
+  use {
+    'pmizio/typescript-tools.nvim',
+    requires = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+  }
+  --
+  --
   use 'neovim/nvim-lspconfig'  -- LSP Config
   use 'hrsh7th/nvim-cmp'       -- Autocompletar
   use 'hrsh7th/cmp-nvim-lsp'   -- LSP source for nvim-cmp

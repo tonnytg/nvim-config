@@ -145,6 +145,11 @@ _G.packer_plugins = {
     path = "/Users/antoniothomacelli/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["typescript-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/antoniothomacelli/.local/share/nvim/site/pack/packer/start/typescript-tools.nvim",
+    url = "https://github.com/pmizio/typescript-tools.nvim"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/antoniothomacelli/.local/share/nvim/site/pack/packer/start/vim-vsnip",
