@@ -1,0 +1,2 @@
+require("tailwindcss-colors").setup()
+
