@@ -4,9 +4,11 @@ lspconfig.tailwindcss.setup({
   filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact" },
   init_options = {
     userLanguages = {
-      typescript = "javascript",
-      typescriptreact = "javascript",
-    },
+        typescript = "javascript",
+        typescriptreact = "javascript",
+        svelte = "html",
+        vue = "html"
+    }
   },
   settings = {
     tailwindCSS = {

@@ -23,4 +23,3 @@ cmp.setup({
     format = lspkind.cmp_format({ maxwidth = 50 }),
   },
 })
-

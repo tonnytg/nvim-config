@@ -38,14 +38,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  use {
-  "themaxmarchuk/tailwindcss-colors.nvim",
-  ft = { "html", "css", "javascript", "typescript", "typescriptreact", "javascriptreact" },
-    config = function()
-      require("tailwindcss-colors").setup()
-    end
-  }
-
   use 'nvim-treesitter/nvim-treesitter'
   use {
     'jupyter-vim/jupyter-vim',

@@ -1,2 +1,0 @@
-require("tailwindcss-colors").setup()
-
