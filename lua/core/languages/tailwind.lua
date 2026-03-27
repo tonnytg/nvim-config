@@ -1,6 +1,4 @@
-local lspconfig = require("lspconfig")
-
-lspconfig.tailwindcss.setup({
+vim.lsp.config('tailwindcss', {
   filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact" },
   init_options = {
     userLanguages = {
@@ -30,4 +28,4 @@ lspconfig.tailwindcss.setup({
     },
   },
 })
-
+vim.lsp.enable('tailwindcss')

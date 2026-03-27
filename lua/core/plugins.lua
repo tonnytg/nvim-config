@@ -38,7 +38,11 @@ return require('packer').startup(function(use)
     end
   }
 
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    branch = 'master',
+    run = ':TSUpdate'
+  }
   use {
     'jupyter-vim/jupyter-vim',
     config = function()

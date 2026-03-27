@@ -1,8 +1,8 @@
 require("core.options")
 require("core.keymaps")
 require("core.plugins")
-require("core.plugin_config")
 require("core.languages")
+require("core.plugin_config")
 
 -- Exportar esquema de cores para o tmux
 vim.cmd('set t_Co=256')
